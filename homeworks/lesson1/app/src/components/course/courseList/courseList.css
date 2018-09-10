@@ -1,0 +1,9 @@
+@media all and (min-width: 480px) {
+    .Courses {
+        padding: 20px 10px;
+    }
+
+    .Courses {
+        margin: 0 auto;
+    }
+}
