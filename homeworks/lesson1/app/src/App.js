@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Jumbotron } from 'react-bootstrap';
+// application components
+import {LoginForm, CourseList, EditCourse} from './components/index';
+// application common styles
 import './App.css';
-import LoginForm from './components/login/login.js';
-import CourseList from './components/course/courseList/courseList.js';
-import EditCourse from './components/course/editCourse/editCourse.js';
 
 class App extends Component {
   render() {

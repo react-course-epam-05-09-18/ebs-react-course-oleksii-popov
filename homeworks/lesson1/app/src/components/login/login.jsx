@@ -10,7 +10,7 @@ class LoginForm extends Component {
 
     render() {
         return (
-            <div className="Login">
+            <div className="login">
                 <h1>Login</h1>
                 <form onSubmit={this.handleSubmit}>
                     <FormGroup bsSize="large">
@@ -39,4 +39,4 @@ class LoginForm extends Component {
     }
 }
 
-export default LoginForm;
+export { LoginForm};

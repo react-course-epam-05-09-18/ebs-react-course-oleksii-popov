@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
 import {Panel} from 'react-bootstrap';
-import './editCourse.css';
+import './edit-course.css';
 
 class EditCourse extends Component {
 
-    constructor(props) {
-        super();
+    constructor(props, context) {
+        super(props, context);
+        // TODO: refactor to grab data from server
         this.course = {
             'title': 'Course 1',
             'desc': 'Intro'
@@ -14,13 +15,17 @@ class EditCourse extends Component {
 
     render() {
         return (
-            <div className="EditCourse">
+            <div className="edit-course">
                 <h1>Add/Edit Course</h1>
                 <Panel>
                     <Panel.Heading>
-                        <Panel.Title componentClass="h3">{this.course.title}</Panel.Title>
+                        <Panel.Title componentClass="h3">
+                            {this.course.title}
+                        </Panel.Title>
                     </Panel.Heading>
-                    <Panel.Body>{this.course.desc}</Panel.Body>
+                    <Panel.Body>
+                        {this.course.desc}
+                    </Panel.Body>
                 </Panel>
             </div>
         );
