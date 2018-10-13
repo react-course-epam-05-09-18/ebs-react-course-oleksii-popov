@@ -2,9 +2,10 @@ import React, {Component} from 'react';
 
 class Page404 extends Component {
     render() {
+        const { pathname } = this.props.location;
         return (
             <div>
-                <h3>Page not found: <code>{this.props.location.pathname} {/*{location.pathname}*/}</code></h3>
+                <h3>Page not found: <code>{pathname}</code></h3>
             </div>
         );
     }

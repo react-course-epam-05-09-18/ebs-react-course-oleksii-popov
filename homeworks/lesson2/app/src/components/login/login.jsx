@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Button, FormGroup, FormControl, ControlLabel} from 'react-bootstrap';
 import './login.css';
 
-class LoginForm extends Component {
+class Login extends Component {
 
     handleSubmit = event => {
         event.preventDefault();
@@ -39,4 +39,4 @@ class LoginForm extends Component {
     }
 }
 
-export { LoginForm};
+export { Login };
